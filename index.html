@@ -11,5 +11,38 @@
   <p>
     Hi, my name is Christopher Brown, you can call me Chris Brown. <hashtag>parkour</hashtag>
   </p>
+  <style>
+    :root {
+      --system-stack: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: var(--system-stack);
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    hashtag {
+      font-style: italics;
+    }
+    hashtag:hover {
+      font-weight: bold;
+    }
+    hashtag::before {
+      content: '#';
+    }
+  </style>
 </body>
 </html>
